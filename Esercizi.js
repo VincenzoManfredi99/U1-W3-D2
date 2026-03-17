@@ -33,3 +33,43 @@ url1.setAttribute('href', urlP)
 
 console.log(changeUrls('https://www.google.com'))
 
+
+//Esercizio 5
+
+const addLi = (nuovoLi)=>{
+const seconda = document.getElementById('secondList')
+const createLi = document.createElement('li')
+createLi.textContent = nuovoLi
+seconda.appendChild(createLi)
+}
+
+console.log(addLi('Nuovo testo'))
+
+//Esercizio 6
+
+const addParagraph = (paragraphParameteres)=>{
+const firstDiv = document.querySelector('div')
+const createParagraph = document.createElement('p')
+createParagraph.textContent = paragraphParameteres
+firstDiv.appendChild(createParagraph)
+}
+
+console.log(addParagraph('Nuovo paragrafo da aggiungere al primo div'))
+
+//Esercizio 7
+
+const eliminaFirstUl = ()=>{
+    const firstUl = document.querySelector('ul')
+    firstUl.remove()
+}
+
+console.log(eliminaFirstUl())
+
+//Esercizio 8
+
+const backgroundVerde = ()=> {
+    const ulPos = document.querySelector('ul')
+    ulPos.style.backgroundColor = 'green'
+}
+
+backgroundVerde()
