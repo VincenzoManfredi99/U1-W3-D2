@@ -73,3 +73,25 @@ const backgroundVerde = ()=> {
 }
 
 backgroundVerde()
+
+//Esercizio 9
+
+const accorciaTitolo = ()=> {
+    const titolo = document.querySelector('h1')
+    const testoAttuale = titolo.innerText
+    const nuovoTesto = testoAttuale.slice(0, -1)
+    titolo.innerText = nuovoTesto
+}
+
+const h1= document.querySelector ('h1')
+h1.onclick = accorciaTitolo
+
+//Esercizio 10
+
+
+const footerclick = ()=>{
+    alert('Hai cliccato il footer')
+}
+
+const footerAlert = document.querySelector('footer')
+footerAlert.onclick =  footerclick
