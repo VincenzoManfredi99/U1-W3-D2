@@ -2,7 +2,6 @@
 
 const changeTitolo = (titoloP)=>{
 const titolo= document.querySelector('div > h1')
-console.log(titolo.innerText)
 titolo.innerText = titoloP
 }
 
@@ -95,3 +94,5 @@ const footerclick = ()=>{
 
 const footerAlert = document.querySelector('footer')
 footerAlert.onclick =  footerclick
+
+//Esercizio 11
